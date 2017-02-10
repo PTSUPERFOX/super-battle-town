@@ -8,8 +8,9 @@ var mongoose = require('mongoose');
 var cors = require('cors')
 require('dotenv').config()
 
-var index = require('./routes/index')
-var users = require('./routes/users')
+var index = require('./routes/index');
+var users = require('./routes/users');
+var chatroom = require('./routes/chatroom');
 
 var app = express()
 
@@ -34,8 +35,10 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(cors())
 
-app.use('/', index)
-app.use('/users', users)
+
+app.use('/', index);
+app.use('/api/users', users);
+app.use('/api/chatroom', chatroom);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
