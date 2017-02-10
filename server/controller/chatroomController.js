@@ -9,25 +9,14 @@ module.exports = {
     })
   },
   createChats: (req, res) => {
-    console.log('ada ', message)
-    // Chats.create({
-    //   username: req.body.username,
-    //   content: req.body.content
-    // }).then(function (data) {
-    //   res.send(data)
-    // }).catch(function (err) {
-    //   res.send(err)
-    // })
-    // let carts = JSON.parse(req.body.carts)
-    // for (let i = 0; i < carts.length; i++) {
-    //   Items.findOneAndUpdate({
-    //     _id: carts[i].id
-    //   }, {$set: {stock: (carts[i].stock) - (carts[i].qty)}}).then(function (data) {
-    //     res.json(data)
-    //   }).catch(function (err) {
-    //     res.json(err)
-    //   })
-    // }
+    Chats.create({
+      username: 'fadly',
+      content: req.body.message
+    }).then(function (data) {
+      res.send(data)
+    }).catch(function (err) {
+      res.send(err)
+    })
   },
   createDummy: (req, res) => {
     Chats.create({
