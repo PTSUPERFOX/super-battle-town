@@ -20,7 +20,7 @@
       }
       .chat-box-name{
         margin-right:10px;
-        color: black;
+
       }
       .chat-content {
         display: inline;
@@ -33,7 +33,9 @@
       }
       .avatar-name {
         margin: 0px;
-        font-family: "Luckiest guy";
+        font-family: "Luckiest Guy";
+        color: rgb(222,222,222);
+        font-size: 32px;
       }
     </style>
     <!--Let browser know website is optimized for mobile-->
@@ -44,43 +46,43 @@
     <div class="container-game">
 
     <div class="row center">
-      <div class="col s1 grid"><img src="public/asset/images/1.png" style="visibility:hidden" width="90px;" alt=""></div>
+      <div class="col s1 grid"><img src="public/asset/images/Dwarf.png" style="visibility:hidden" width="90px;" alt=""></div>
     </div>
     <div class="row center">
-      <div class="col s1 grid"><img src="public/asset/images/1.png" style="visibility:hidden" width="90px;" alt=""></div>
+      <div class="col s1 grid"><img src="public/asset/images/Elf.png" style="visibility:hidden" width="90px;" alt=""></div>
     </div>
     <div class="row center">
-      <div class="col s1 offset-s3 grid"><img src="public/asset/images/1.png" width="90px;" alt=""></div>
+      <div class="col s1 offset-s3 grid"><img src="public/asset/images/Golem.png" width="90px;" alt=""></div>
       <div class="col s1 grid"></div>
       <div class="col s1 grid"></div>
       <div class="col s1 grid"></div>
       <div class="col s1 grid"></div>
       <div class="col s1 grid"></div>
       <div class="col s1 grid"></div>
-      <div class="col s1 grid"><img src="public/asset/images/1.png" width="90px;" alt=""></div>
+      <div class="col s1 grid"><img src="public/asset/images/Orc.png" width="90px;" alt=""></div>
     </div>
     <div class="row center">
-      <div class="col s1 offset-s3 grid" id="11"><p class="avatar-name">Gana</p><img src="public/asset/images/1.png" width="90px;" alt=""></div>
+      <div class="col s1 offset-s3 grid" id="11"></div>
       <div class="col s1 grid" id="12"></div>
       <div class="col s1 grid" id="13"></div>
       <div class="col s1 grid" id="14"></div>
-      <div class="col s1 grid" id="15"><img src="public/asset/images/1.png" width="90px;" alt=""></div>
+      <div class="col s1 grid" id="15"></div>
       <div class="col s1 grid" id="16"></div>
-      <div class="col s1 grid" id="17"><img src="public/asset/images/1.png" width="90px;" alt=""></div>
+      <div class="col s1 grid" id="17"><img src="public/asset/images/Knight.png" width="90px;" alt=""></div>
       <div class="col s1 grid" id="18"></div>
     </div>
     <div class="row center">
-      <div class="col s1 offset-s3 grid" id="21"><img src="public/asset/images/3.png" width="90px;" alt=""></div>
+      <div class="col s1 offset-s3 grid" id="21"><img src="public/asset/images/Orc.png" width="90px;" alt=""></div>
       <div class="col s1 grid" id="22"></div>
       <div class="col s1 grid" id="23"></div>
       <div class="col s1 grid" id="24"></div>
       <div class="col s1 grid" id="25"></div>
       <div class="col s1 grid" id="26"></div>
-      <div class="col s1 grid" id="27"><img src="public/asset/images/2.png" width="90px;" alt=""></div>
+      <div class="col s1 grid" id="27"><img src="public/asset/images/Elf.png" width="90px;" alt=""></div>
       <div class="col s1 grid" id="28"></div>
     </div>
     <div class="row center">
-      <div class="col s1 offset-s3 grid" id="31"><img src="public/asset/images/2.png" width="90px;" alt=""></div>
+      <div class="col s1 offset-s3 grid" id="31"><img src="public/asset/images/Golem.png" width="90px;" alt=""></div>
       <div class="col s1 grid" id="32"></div>
       <div class="col s1 grid" id="33"></div>
       <div class="col s1 grid" id="34"></div>
@@ -90,14 +92,14 @@
       <div class="col s1 grid" id="38"></div>
     </div>
     <div class="row center">
-      <div class="col s1 offset-s3 grid" id="41"><img src="public/asset/images/4.png" width="90px;" alt=""></div>
-      <div class="col s1 grid" id="42"><img src="public/asset/images/2.png" width="90px;" alt=""></div>
+      <div class="col s1 offset-s3 grid" id="41"><img src="public/asset/images/Knight.png" width="90px;" alt=""></div>
+      <div class="col s1 grid" id="42"><img src="public/asset/images/Dwarf.png" width="90px;" alt=""></div>
       <div class="col s1 grid" id="43"></div>
       <div class="col s1 grid" id="44"></div>
       <div class="col s1 grid" id="45"></div>
-      <div class="col s1 grid" id="46"><img src="public/asset/images/2.png" width="90px;" alt=""></div>
+      <div class="col s1 grid" id="46"><img src="public/asset/images/Golem.png" width="90px;" alt=""></div>
       <div class="col s1 grid" id="47"></div>
-      <div class="col s1 grid" id="48"><img src="public/asset/images/3.png" width="90px;" alt=""></div>
+      <div class="col s1 grid" id="48"><img src="public/asset/images/Elf.png" width="90px;" alt=""></div>
     </div>
     </div>
 
@@ -123,7 +125,7 @@
     </div>
 
     <div style="position:absolute; top:0px; right:20px;">
-      <button class="btn waves-effect waves-light" id="logout_button" style="background-color:rgb(201, 58, 75); color:rgb(200,200,200)" type="submit" name="action" onclick="logout()">Log out
+      <button class="btn waves-effect waves-light" id="logout_button" style="background-color:rgb(201, 58, 75); color:rgb(200,200,200)" type="submit" name="action">Log out
       </button>
     </div>
 
@@ -132,12 +134,20 @@
     <script src="ajaxchat.js" charset="utf-8"></script>
     <script src="chatbox.js"></script>
     <script>
-      function logout() {
-        $('#logout_button').click(function(){
-          window.localStorage.clear();
-          window.location.href = 'http://127.0.0.1:8080/'; 
-        })
-      }
+
+    $('#logout_button').click(function(){
+      window.localStorage.clear();
+      window.location.href = 'http://127.0.0.1:8080/';
+    })
+
+    $( document ).ready(function() {
+      let Username =  localStorage.getItem('Username')
+      let Avatar =  localStorage.getItem('avatar')
+      let Coordinate = localStorage.getItem('coordinate')
+      console.log(Username, Avatar, typeof Coordinate);
+      $(`#${Coordinate}`).append(`<p class="avatar-name">${Username}</p><img src="public/asset/images/${Avatar}.png" width="90px;" alt="">`)
+    });
+
     </script>
     <!-- <script src="chat.js" charset="utf-8"></script> -->
   </body>

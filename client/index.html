@@ -77,10 +77,11 @@
                          </select>
                     </div>
                     <div class="input-field col s6 offset-s2" style="margin-top:30px;">
-                      <button class="btn waves-effect waves-light" type="submit" name="action" onclick="register()">Submit
+                      <button class="btn waves-effect waves-light" type="submit" name="action" id="close_on_click" onclick="register()">Submit
                         <i class="material-icons right">send</i>
                       </button>
                     </div>
+
                   </form>
                 </div>
             </div>
@@ -96,6 +97,10 @@
     $('#register_close').click(function(){
       $('#card_login').css('height','180px')
     })
+    $('#register_button').click(function(){
+      $('#register_close').html('Register<i class="material-icons right">close</i>')
+    })
+
     </script>
     <!-- <script src="public/js/register-login.js" charset="utf-8"></script> -->
     <script type="text/javascript">
@@ -115,8 +120,9 @@
               },
               dataType: 'json',
               success: function(data) {
-                window.location.href = 'http://127.0.0.1:8080/';
-                localStorage.setItem('Username', data.name)
+                // window.location.href = 'http://127.0.0.1:8080/';
+                // localStorage.setItem('Username', data.name)
+                $('#register_close').html('Register Success<i class="material-icons right">close</i>')
               },
               fail: function(err){
                 console.log(err);
@@ -141,9 +147,9 @@
               },
               dataType: 'json',
               success: function(user) {
-                alert('Halo');
                 localStorage.setItem('Username', user.name)
                 localStorage.setItem('avatar', user.avatar)
+                localStorage.setItem('coordinate', String(user.coordinate.posX) + String(user.coordinate.posY) )
                 window.location.href = 'http://127.0.0.1:8080/app.html';
 
               },
