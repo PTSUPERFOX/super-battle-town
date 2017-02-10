@@ -19,6 +19,7 @@ body {
   height: 600px;
   position: relative;
   transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+  opacity: 0.6;
 }
 
 .chat-container {
