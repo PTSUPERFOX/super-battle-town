@@ -2,8 +2,16 @@ $(document).ready(function () {
   showChatBox()
 })
 
-function dummyUserName () {
+function dummyGana () {
+  localStorage.setItem('Username', 'Gana')
+}
+
+function dummySyanmil () {
   localStorage.setItem('Username', 'Syanmil')
+}
+
+function dummyFadly () {
+  localStorage.setItem('Username', 'Fadly')
 }
 
 function showChatBox () {
