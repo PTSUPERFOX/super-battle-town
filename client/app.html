@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Super Battle Arena</title>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Kaushan+Script|Luckiest+Guy|Oleo+Script|Permanent+Marker" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+
+    <link rel="stylesheet" href="public/css/main.css">
+    <style>
+      body {
+        background: url('public/asset/images/map3.png') no-repeat;
+        background-size: cover;
+      }
+      .date-text {
+        font-style:italic;
+      }
+      .chat-box-name{
+        margin-right:10px;
+      }
+      .chat-content {
+        display: inline;
+      }
+      .grid{
+        height: 10%;
+        background-color: red;
+      }
+      .center {
+        text-align: center;
+      }
+      .avatar-name {
+        margin: 0px;
+        font-family: "Luckiest guy";
+      }
+    </style>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
+    <div class="row center">
+      <div class="col s1 grid"><img src="public/asset/images/1.png" style="visibility:hidden" width="90px;" alt=""></div>
+    </div>
+    <div class="row center">
+      <div class="col s1 grid"><img src="public/asset/images/1.png" style="visibility:hidden" width="90px;" alt=""></div>
+    </div>
+    <div class="row center">
+      <div class="col s1 offset-s3 grid"><img src="public/asset/images/1.png" width="90px;" alt=""></div>
+      <div class="col s1 grid"></div>
+      <div class="col s1 grid"></div>
+      <div class="col s1 grid"></div>
+      <div class="col s1 grid"></div>
+      <div class="col s1 grid"></div>
+      <div class="col s1 grid"></div>
+      <div class="col s1 grid"><img src="public/asset/images/1.png" width="90px;" alt=""></div>
+    </div>
+    <div class="row center">
+      <div class="col s1 offset-s3 grid" id="11"><p class="avatar-name">Gana</p><img src="public/asset/images/1.png" width="90px;" alt=""></div>
+      <div class="col s1 grid" id="12"></div>
+      <div class="col s1 grid" id="13"></div>
+      <div class="col s1 grid" id="14"></div>
+      <div class="col s1 grid" id="15"><img src="public/asset/images/1.png" width="90px;" alt=""></div>
+      <div class="col s1 grid" id="16"></div>
+      <div class="col s1 grid" id="17"><img src="public/asset/images/1.png" width="90px;" alt=""></div>
+      <div class="col s1 grid" id="18"></div>
+    </div>
+    <div class="row center">
+      <div class="col s1 offset-s3 grid" id="21"><img src="public/asset/images/3.png" width="90px;" alt=""></div>
+      <div class="col s1 grid" id="22"></div>
+      <div class="col s1 grid" id="23"></div>
+      <div class="col s1 grid" id="24"></div>
+      <div class="col s1 grid" id="25"></div>
+      <div class="col s1 grid" id="26"></div>
+      <div class="col s1 grid" id="27"><img src="public/asset/images/2.png" width="90px;" alt=""></div>
+      <div class="col s1 grid" id="28"></div>
+    </div>
+    <div class="row center">
+      <div class="col s1 offset-s3 grid" id="31"><img src="public/asset/images/2.png" width="90px;" alt=""></div>
+      <div class="col s1 grid" id="32"></div>
+      <div class="col s1 grid" id="33"></div>
+      <div class="col s1 grid" id="34"></div>
+      <div class="col s1 grid" id="35"></div>
+      <div class="col s1 grid" id="36"></div>
+      <div class="col s1 grid" id="37"></div>
+      <div class="col s1 grid" id="38"></div>
+    </div>
+    <div class="row center">
+      <div class="col s1 offset-s3 grid" id="41"><img src="public/asset/images/4.png" width="90px;" alt=""></div>
+      <div class="col s1 grid" id="42"><img src="public/asset/images/2.png" width="90px;" alt=""></div>
+      <div class="col s1 grid" id="43"></div>
+      <div class="col s1 grid" id="44"></div>
+      <div class="col s1 grid" id="45"></div>
+      <div class="col s1 grid" id="46"><img src="public/asset/images/2.png" width="90px;" alt=""></div>
+      <div class="col s1 grid" id="47"></div>
+      <div class="col s1 grid" id="48"><img src="public/asset/images/3.png" width="90px;" alt=""></div>
+    </div>
+    <div style="position:absolute; bottom:0px; right:5%; width:500px;">
+      <div class="card" style="background-color: rgba(255,255,255,0.9)">
+        <div class="card-content">
+          <div class="" style="margin-bottom:10px;">
+            <b style="margin-right:10px;">You: </b><p style="display:inline"> Hello how are you?</p>
+            <p class="date-text">12/January/2017</p>
+          </div>
+          <div class="" style="margin-bottom:10px;">
+            <b class="chat-box-name">You: </b><p class="chat-content"> I'm fine thank you</p>
+            <p class="date-text">12/January/2017</p>
+          </div>
+        </div>
+        <div class="card-action" style="padding:0px; padding-top:20px;">
+          <div class="row">
+            <form class="col s11">
+              <div class="row" style="padding-left:0px;">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix">mode_edit</i>
+                  <textarea id="icon_prefix2" class="materialize-textarea" style="padding:0px; padding-top:10px; margin-bottom:0px;" placeholder="Input your message here"></textarea>
+                  <label for="icon_prefix2">Message</label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <script src="chat.js" charset="utf-8"></script> -->
+  </body>
+</html>
