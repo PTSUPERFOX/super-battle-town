@@ -1,45 +1,139 @@
 <!DOCTYPE html>
 <html >
   <head>
-    <meta charset="UTF-8">
-    <title>Chat Window</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="chatbox.css">
+    <title>Super Battle Town</title>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Kaushan+Script|Luckiest+Guy|Oleo+Script|Permanent+Marker" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+    <script>
+       $(document).ready(function() {
+          $('select').material_select();
+      });
+    </script>
+    <link rel="stylesheet" href="public/css/index.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
-
   <body>
-    <div class="chat-box">
-      <div class="chat-header">
-      </div>
-      <div id='chat' class="chat">
-        <div class="chat-container active" id='cont1'>
-
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center orange-text"></h1>
+        <div class="row">
+          <div class="col s8 offset-s2">
+            <div class="card">
+              <div class="card-image" style="margin-bottom:15px;">
+                <h2 class="title-login" style="margin-top:0px;">Super Battle Town</h2>
+                <span class="card-title"></span>
+              </div>
+              <div class="card-content" style="height: 180px; padding-top:30px;" id="card_login">
+                <div class="row">
+                  <form class="col s12" style="height:70px;" id="logMeIn">
+                    <div class="row">
+                      <div class="input-field col s6">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="icon_user" name="username" type="text" class="validate">
+                        <label for="icon_user" style="font-family:'luckiest guy'; font-size:20px;">Username</label>
+                      </div>
+                      <div class="input-field col s6">
+                        <i class="material-icons prefix">vpn_key</i>
+                        <input id="icon_password" name="password" type="password" class="validate">
+                        <label for="icon_password" style="font-family:'luckiest guy'; font-size:20px;">Password</label>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <span class="card-title activator" id="register_button" style="font-family:bangers; padding-left:40px;">Register Here</span>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title" style="font-family:bangers; padding-left: 25px;" id="register_close">Register<i class="material-icons right">close</i></span>
+                <div class="row">
+                  <form class="col s12" id="registerMe">
+                    <div class="row">
+                      <div class="input-field col s6 offset-s3">
+                        <input placeholder="This will be your character name" name="username" id="username" type="text" class="validate">
+                        <label for="username">Username</label>
+                      </div>
+                      <div class="input-field col s6 offset-s3">
+                        <input id="password" placeholder="Alphanumeric" type="password" name="password" class="validate">
+                        <label for="password">Password</label>
+                      </div>
+                      <br />
+                      <div class="input-field col s8 offset-s2">
+                          <select class="icons" name="avatar">
+                           <option value="" disabled selected>Choose your Avatar!</option>
+                           <option value="" data-icon="public/asset/images/1.png" class="left circle">Dwarf</option>
+                           <option value="" data-icon="public/asset/images/2.png" class="left circle">Elf</option>
+                           <option value="" data-icon="public/asset/images/3.png" class="left circle">Orc</option>
+                           <option value="" data-icon="public/asset/images/4.png" class="left circle">Golem</option>
+                           <option value="" data-icon="public/asset/images/5.png" class="left circle">Knight</option>
+                         </select>
+                    </div>
+                    <div class="input-field col s6 offset-s2" style="margin-top:30px;">
+                      <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                        <i class="material-icons right">send</i>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+            </div>
+          </div>
         </div>
       </div>
-      <form id="input-chat" class="chat-control" method="post">
-        <input type="text" class="form-control chat-input" name="chat" placeholder="Enter your message...">
-      </form>
     </div>
 
-<<<<<<< HEAD
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="ajaxchat.js" charset="utf-8"></script>
-    <script src="chatbox.js"></script>
-=======
     <script>
     $('#register_button').click(function(){
-      $('#card_login').css('height','410px')
+      $('#card_login').css('height','380px')
     })
     $('#register_close').click(function(){
       $('#card_login').css('height','180px')
     })
     </script>
-
-    <!--Import jQuery before materialize.js-->
-    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
-    <!-- Compiled and minified JavaScript -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script> -->
->>>>>>> ebfecba03a21e64f3f0765327d100eff061acb6a
+    <!-- <script src="public/js/register-login.js" charset="utf-8"></script> -->
+    <script type="text/javascript">
+      $('form#registerMe').submit(function(e){
+          e.preventDefault()
+          let username = $('input#username.validate.valid').val()
+          let password = $('input#password.validate.valid').val()
+          let avatar = $('input.select-dropdown').val()
+          let userData = {username: username, password: password, avatar: avatar}
+          $.ajax({
+            type: 'POST',
+            url: 'http://localhost:3000/api/users',
+            data: {user: userData},
+            dataType: 'json',
+            success: function(data) {
+              console.log(data.username);
+              localStorage.setItem('Username', data.username)
+            },
+            fail: function(err){
+              console.log(err);
+            }
+          })
+        })
+      $('form#logMeIn').submit(function(e){
+        e.preventDefault()
+        let username = $("input#icon_user.validate.valid").val());
+        let password = $('input#icon_password.validate.valid').val());
+        let userData = {username: username, password: password}
+        $.ajax({
+          type: 'POST',
+          url: 'http://localhost:3000/api/users/login',
+          data: {user: userData},
+          dataType: 'json',
+          success: function(user) {
+            if()
+          },
+          fail: function(err){
+            console.log(err);
+          }
+        })
+      })
+    </script>
   </body>
 </html>

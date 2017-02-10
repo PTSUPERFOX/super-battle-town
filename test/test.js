@@ -1,6 +1,6 @@
-const app = require('../app');
+const app = require('../server/app');
 /* require user models */
-const User = require('../models/users');
+const User = require('../server/models/users');
 /* liblary */
 let chai = require('chai');
 let chaiHttp = require('chai-http');
