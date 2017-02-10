@@ -31,7 +31,7 @@ let userController = {
       if (hash.verify(password, user.password)){
         res.send({ name: user.name, avatar: user.avatar, coordinate: coordinate() })
       } else {
-        res.send('username salah');
+        res.send('username or password incorrect');
       }
     })
   }
