@@ -1,3 +1,4 @@
+<<<<<<< 3ead52db586c1a7f79200613e5cd4596b34afe08
 $('form#logMeIn').submit(function(e){
   e.preventDefault();
   let username = $("input#icon_user.validate.valid").val());
@@ -36,4 +37,15 @@ $('form#registerMe').submit(function(e){
       console.log(err);
     }
   })
+=======
+$('form#registerMe').submit(function(){
+  let username = $('input#username.validate.valid').val()
+  let password = $('input#password.validate.valid').val()
+  let avatar = $('input.select-dropdown').val()
+  console.log(username+password+avatar);
+})
+$('form#logMeIn').submit(function(){
+  console.log($("input#icon_user.validate.valid").val());
+  console.log($('input#icon_password.validate.valid').val());
+>>>>>>> resolving conflict
 })
