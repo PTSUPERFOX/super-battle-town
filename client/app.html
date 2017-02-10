@@ -20,13 +20,13 @@
       }
       .chat-box-name{
         margin-right:10px;
+        color: black;
       }
       .chat-content {
         display: inline;
       }
       .grid{
         height: 10%;
-        background-color: red;
       }
       .center {
         text-align: center;
@@ -40,6 +40,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
   <body>
+
+    <div class="container-game">
+
     <div class="row center">
       <div class="col s1 grid"><img src="public/asset/images/1.png" style="visibility:hidden" width="90px;" alt=""></div>
     </div>
@@ -96,45 +99,28 @@
       <div class="col s1 grid" id="47"></div>
       <div class="col s1 grid" id="48"><img src="public/asset/images/3.png" width="90px;" alt=""></div>
     </div>
-    <div class="chat-box">
-      <div class="chat-header">
-      </div>
-      <div id='chat' class="chat">
-        <div class="chat-container active" id='cont1'>
-
-        </div>
-      </div>
-      <form id="input-chat" class="chat-control" method="post">
-        <input type="text" class="form-control chat-input" name="chat" placeholder="Enter your message...">
-      </form>
     </div>
-    <!-- <div style="position:absolute; bottom:0px; right:5%; width:500px;">
-      <div class="card" style="background-color: rgba(255,255,255,0.9)">
-        <div class="card-content">
-          <div class="" style="margin-bottom:10px;">
-            <b style="margin-right:10px;">You: </b><p style="display:inline"> Hello how are you?</p>
-            <p class="date-text">12/January/2017</p>
-          </div>
-          <div class="" style="margin-bottom:10px;">
-            <b class="chat-box-name">You: </b><p class="chat-content"> I'm fine thank you</p>
-            <p class="date-text">12/January/2017</p>
-          </div>
+
+    <div style="position:absolute; bottom:0px; left:10px; width:22%;">
+      <div class="card" style="background-color: rgba(255,255,255,0.9);">
+        <div class="card-content" id="cont1" style="max-height: 500px; overflow:auto">
+
         </div>
         <div class="card-action" style="padding:0px; padding-top:20px;">
           <div class="row">
-            <form class="col s11">
+            <form class="col s11" id="input-chat">
               <div class="row" style="padding-left:0px;">
                 <div class="input-field col s12">
                   <i class="material-icons prefix">mode_edit</i>
-                  <textarea id="icon_prefix2" class="materialize-textarea" style="padding:0px; padding-top:10px; margin-bottom:0px;" placeholder="Input your message here"></textarea>
-                  <label for="icon_prefix2">Message</label>
+                  <textarea id="icon_prefix2" class="materialize-textarea" name="chat" style="padding:0px; padding-top:10px; margin-bottom:0px;" placeholder="Input your message here"></textarea>
+                  <label for="icon_prefix2" style="top:2.8rem;">Message</label>
                 </div>
               </div>
             </form>
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>

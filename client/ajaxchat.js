@@ -22,10 +22,12 @@ function showChatBox () {
       for (let i = 0; i < resp.length; i++) {
         let chat = resp[i]
         $('#cont1').append(
-          `<div class="bubble">
-            <p><span style="font-style:bold">${chat.username}:</span></br>${chat.content}</p>
+          `
+          <div style="margin-bottom:10px;">
+            <b style="margin-right:10px;">${chat.username}: </b><p style="display:inline"> ${chat.content}</p>
+            <!-- <p class="date-text">12/January/2017</p> -->
           </div>
-          </br>`
+          `
         )
       }
     },
@@ -34,19 +36,29 @@ function showChatBox () {
     }
   })
 
-  $('#input-chat').submit(function (e) {
-    e.preventDefault()
-    let messageVal = $('input[name=chat]').val()
+  $('#icon_prefix2').keypress(function (e) {
+    // e.preventDefault()
+    let messageVal = $('textarea[name=chat]').val()
     let usernameVal = localStorage.getItem('Username')
-    $.ajax({
-      type: 'POST',
-      url: 'http://localhost:3000/api/chatroom/send',
-      data: {message: messageVal, username: usernameVal},
-      dataType: 'json'
-    })
-    .done(function (resp) {
-      $('input[name=chat]').val('')
-      location.reload()
-    })
+    if (e.which === 13) {
+      $.ajax({
+        type: 'POST',
+        url: 'http://localhost:3000/api/chatroom/send',
+        data: {message: messageVal, username: usernameVal},
+        dataType: 'json'
+      })
+      .done(function (resp) {
+        $('textarea[name=chat]').val('')
+        $('#cont1').append(
+          `
+          <div style="margin-bottom:10px;">
+            <b style="margin-right:10px;">${resp.username}: </b><p style="display:inline"> ${resp.content}</p>
+            <!-- <p class="date-text">12/January/2017</p> -->
+          </div>
+          `
+        )
+        $('#cont1').scrollTop($('#cont1').prop('scrollHeight'))
+      })
+    }
   })
 }
