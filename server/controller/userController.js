@@ -1,19 +1,18 @@
 var users = require('../models/users.js')
 
-let itemController = {
-  create : function(req, res){
+let userController = {
+  register : function(req, res){
     let data = {
       name : req.body.name,
-      picture : req.file.originalname,
-      stock: req.body.stock,
-      price: req.body.price
+      password: req.body.password,
+      avatar: req.body.avatar
     }
     let newusers = users(data)
     newusers.save(function(err){
       if(err) throw err;
       res.send({
-        msg: 'item Created!',
-        item: newusers
+        msg: 'user Created!',
+        user: newusers
       })
     })
   },
@@ -22,6 +21,13 @@ let itemController = {
       if (err) throw err;
       res.json(users)
     })
+  },
+  login: function(req, res){
+    let name = req.body.name
+    let password = req.body.password
+    users.findOne({name: name}).then(function(user){
+      console.log(user);
+    })
   }
 }
-module.exports = itemController
+module.exports = userController

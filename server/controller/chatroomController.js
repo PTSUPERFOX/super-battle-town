@@ -1,4 +1,4 @@
-let Chats = require('../models/chats')
+// let Chats = require('../models/chats')
 
 module.exports = {
   getItems: (req, res) => {
