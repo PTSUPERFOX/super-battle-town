@@ -32,7 +32,7 @@ function showChatBox () {
       dataType: 'json'
     })
     .done(function (resp) {
-      let messageVal = $('input[name=chat]').val('')
+      $('input[name=chat]').val('')
       location.reload()
     })
     // return false
