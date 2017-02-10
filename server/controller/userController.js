@@ -1,6 +1,6 @@
 var users = require('../models/users.js');
 var hash = require('password-hash');
-var coordinate = require('../server/public/helpers/position');
+var coordinate = require('../public/helpers/position');
 
 let userController = {
   register : function(req, res){
@@ -31,7 +31,7 @@ let userController = {
       if (hash.verify(password, user.password)){
         res.send({ name: user.name, avatar: user.avatar, coordinate: coordinate() })
       } else {
-        res.send('username salah');
+        res.send('username or password incorrect');
       }
     })
   }
