@@ -1,6 +1,7 @@
 $(document).ready(function () {
   showChatBox()
 })
+
 function dummyGana () {
   localStorage.setItem('Username', 'Gana')
 }
@@ -41,6 +42,7 @@ function showChatBox () {
       type: 'POST',
       url: 'http://localhost:3000/api/chatroom/send',
       data: {message: messageVal, username: usernameVal},
+      dataType: 'json'
     })
     .done(function (resp) {
       $('input[name=chat]').val('')
