@@ -2,6 +2,10 @@ $(document).ready(function () {
   showChatBox()
 })
 
+function dummyUserName () {
+  localStorage.setItem('Username', 'Syanmil')
+}
+
 function showChatBox () {
   $.ajax({
     type: 'GET',
@@ -11,7 +15,7 @@ function showChatBox () {
         let chat = resp[i]
         $('#cont1').append(
           `<div class="bubble">
-            <p><span style="font-style:bold">${chat.username}:  </span>${chat.content}</p>
+            <p><span style="font-style:bold">${chat.username}:</span></br>${chat.content}</p>
           </div>
           </br>`
         )
@@ -25,16 +29,16 @@ function showChatBox () {
   $('#input-chat').submit(function (e) {
     e.preventDefault()
     let messageVal = $('input[name=chat]').val()
+    let usernameVal = localStorage.getItem('Username')
     $.ajax({
       type: 'POST',
       url: 'http://localhost:3000/api/chatroom/send',
-      data: {message: messageVal},
+      data: {message: messageVal, username: usernameVal},
       dataType: 'json'
     })
     .done(function (resp) {
       $('input[name=chat]').val('')
       location.reload()
     })
-    // return false
   })
 }
