@@ -59,7 +59,6 @@
     <link rel="stylesheet" href="public/css/index.css">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <script src="public/js/register-login.js" charset="utf-8"></script>
   </head>
   <body>
     <div class="section no-pad-bot">
@@ -137,7 +136,10 @@
       $('#card_login').css('height','180px')
     })
     </script>
+<<<<<<< 4c874f30c950e30561aa8bcb491356a587d0a0e3
 <<<<<<< 3ead52db586c1a7f79200613e5cd4596b34afe08
+=======
+>>>>>>> temp integration
     <!-- <script src="public/js/register-login.js" charset="utf-8"></script> -->
     <script type="text/javascript">
       $('form#registerMe').submit(function(e){
@@ -179,8 +181,11 @@
         })
       })
     </script>
+<<<<<<< 4c874f30c950e30561aa8bcb491356a587d0a0e3
 =======
 >>>>>>> resolving conflict
+=======
+>>>>>>> temp integration
     <!--Import jQuery before materialize.js-->
     <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
     <!-- Compiled and minified JavaScript -->
