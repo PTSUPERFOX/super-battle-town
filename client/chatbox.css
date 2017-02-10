@@ -17,9 +17,17 @@ body {
   margin: 20px;
   max-width: 400px;
   height: 600px;
+<<<<<<< 0d1b34eca1aac614d23376bc786dc468a5d9b63e
   position: relative;
   transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
   opacity: 0.6;
+=======
+  /*box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);*/
+  /*border : 1px solid #000;*/
+  /*overflow: hidden;*/
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+>>>>>>> Add chat table
 }
 
 .chat-container {
@@ -47,7 +55,11 @@ body {
 
 .chat-control {
   padding: 1.2em;
+<<<<<<< 0d1b34eca1aac614d23376bc786dc468a5d9b63e
   margin-top: 506px;
+=======
+  margin-top: 495px;
+>>>>>>> Add chat table
 }
 
 .chat-input {
@@ -89,12 +101,22 @@ p {
   background: white;
   padding: 0.5em 1em;
   border-radius: 3px;
+<<<<<<< 0d1b34eca1aac614d23376bc786dc468a5d9b63e
   margin: 10px 0;
+=======
+  /*box-shadow: 0 5px 30px rgba(255, 255, 255, 0.1);*/
+  margin: 10px 0;
+  /*color: rgba(255, 255, 255, 0.7);*/
+>>>>>>> Add chat table
   word-wrap: break-word;
   font-size: 1em;
 }
 
+<<<<<<< 0d1b34eca1aac614d23376bc786dc468a5d9b63e
 /*.bubble:after {
+=======
+.bubble:after {
+>>>>>>> Add chat table
   border-radius: 20px / 5px;
   content: '';
   display: block;
@@ -104,7 +126,11 @@ p {
   bottom: 1px;
   transform: rotateZ(-90deg);
   left: -15px;
+<<<<<<< 0d1b34eca1aac614d23376bc786dc468a5d9b63e
 }*/
+=======
+}
+>>>>>>> Add chat table
 
 .bubble-alt {
   float: right;
@@ -117,6 +143,18 @@ p {
   right: -16px;
 }
 
+<<<<<<< 0d1b34eca1aac614d23376bc786dc468a5d9b63e
+=======
+.datestamp {
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #8b91a0;
+  float: left;
+  opacity: 0;
+}
+
+>>>>>>> Add chat table
 .dt-alt {
   float: right;
 }
