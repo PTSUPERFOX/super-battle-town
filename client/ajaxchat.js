@@ -9,11 +9,11 @@ function showChatBox () {
     success: function (resp) {
       for (let i = 0; i < resp.length; i++) {
         let chat = resp[i]
-        $('#chat-box').append(
-          `<tr>
-              <td>${chat.username}</td>
-              <td>${chat.content}</td>
-          </tr>`
+        $('#cont1').append(
+          `<div class="bubble">
+            <p><span style="font-style:bold">${chat.username}:  </span>${chat.content}</p>
+          </div>
+          </br>`
         )
       }
     },

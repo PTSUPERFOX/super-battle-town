@@ -1,31 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html >
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <title>Chat Window</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <title></title>
+    <link rel="stylesheet" href="chatbox.css">
   </head>
-  <body>
-    <div class="col-md-4 col-sm-12 col-xs-12">
-      <div class="panel panel-info">
-        <div class="panel-heading">Chat Box:</div>
-        <div class="panel-body" style="width: 100%">
-          <table class="table">
-            <tbody id="chat-box">
 
-            </tbody>
-          </table>
-          <form id="input-chat" method="post">
-            <div class="form-group">
-              <input type="text" class="form-control" name="chat" placeholder="Please write something...">
-            </div>
-            <button type="submit" class="btn btn-success">Send</button>
-          </form>
+  <body>
+    <div class="chat-box">
+      <div class="chat-header">
+      </div>
+      <div id='chat' class="chat">
+        <div class="chat-container active" id='cont1'>
+
         </div>
       </div>
+      <form id="input-chat" class="chat-control" method="post">
+        <input type="text" class="form-control chat-input" name="chat" placeholder="Enter your message...">
+      </form>
     </div>
+
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="chat.js" charset="utf-8"></script>
+    <script src="ajaxchat.js" charset="utf-8"></script>
+    <script src="chatbox.js"></script>
   </body>
 </html>
