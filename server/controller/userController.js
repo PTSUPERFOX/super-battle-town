@@ -1,10 +1,11 @@
 var users = require('../models/users.js')
+var hash = require('password-hash')
 
 let userController = {
   register : function(req, res){
     let data = {
       name : req.body.name,
-      password: req.body.password,
+      password: hash.generate(req.body.password),
       avatar: req.body.avatar
     }
     let newusers = users(data)
@@ -26,7 +27,11 @@ let userController = {
     let name = req.body.name
     let password = req.body.password
     users.findOne({name: name}).then(function(user){
-      console.log(user);
+      if (hash.verify(password, user.password)){
+        res.send(user)
+      } else {
+        res.send('username salah');
+      }
     })
   }
 }
