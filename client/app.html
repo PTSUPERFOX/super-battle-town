@@ -122,10 +122,23 @@
       </div>
     </div>
 
+    <div style="position:absolute; top:0px; right:20px;">
+      <button class="btn waves-effect waves-light" id="logout_button" style="background-color:rgb(201, 58, 75); color:rgb(200,200,200)" type="submit" name="action" onclick="logout()">Log out
+      </button>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
     <script src="ajaxchat.js" charset="utf-8"></script>
     <script src="chatbox.js"></script>
+    <script>
+      function logout() {
+        $('#logout_button').click(function(){
+          window.localStorage.clear();
+          window.location.href = 'http://127.0.0.1:8080/'; 
+        })
+      }
+    </script>
     <!-- <script src="chat.js" charset="utf-8"></script> -->
   </body>
 </html>

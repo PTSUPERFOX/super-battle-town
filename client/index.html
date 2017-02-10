@@ -116,8 +116,7 @@
               dataType: 'json',
               success: function(data) {
                 window.location.href = 'http://127.0.0.1:8080/';
-                console.log(data.username);
-                localStorage.setItem('Username', data.username)
+                localStorage.setItem('Username', data.name)
               },
               fail: function(err){
                 console.log(err);
@@ -129,6 +128,7 @@
         function login(){
 
           $('form#logMeIn').submit(function(e){
+
             e.preventDefault()
             let username = $("input#icon_user.validate.valid").val();
             let password = $('input#icon_password.validate.valid').val();
@@ -141,9 +141,11 @@
               },
               dataType: 'json',
               success: function(user) {
-                window.location.href = 'http://127.0.0.1:8080/app.html';
+                alert('Halo');
                 localStorage.setItem('Username', user.name)
                 localStorage.setItem('avatar', user.avatar)
+                window.location.href = 'http://127.0.0.1:8080/app.html';
+
               },
               fail: function(err){
                 console.log(err);
