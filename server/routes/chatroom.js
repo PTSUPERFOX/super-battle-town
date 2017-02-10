@@ -6,6 +6,4 @@ router.get('/', chatsController.getChats)
 
 router.post('/send', chatsController.createChats)
 
-router.post('/dummy', chatsController.createDummy)
-
 module.exports = router

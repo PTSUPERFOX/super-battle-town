@@ -11,18 +11,8 @@ module.exports = {
   },
   createChats: (req, res) => {
     Chats.create({
-      username: 'fadly',
-      content: req.body.message
-    }).then(function (data) {
-      res.send(data)
-    }).catch(function (err) {
-      res.send(err)
-    })
-  },
-  createDummy: (req, res) => {
-    Chats.create({
       username: req.body.username,
-      content: req.body.content
+      content: req.body.message
     }).then(function (data) {
       res.send(data)
     }).catch(function (err) {
