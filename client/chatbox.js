@@ -1,4 +1,7 @@
+<<<<<<< ca1674afd42a35c7ccfafa0d97b0cd991dc0bb60
 <<<<<<< 0d1b34eca1aac614d23376bc786dc468a5d9b63e
+=======
+>>>>>>> Done chat-box
     $(document).ready(function () {
       $('.user-profile').click(function () {
         if (!$(this).hasClass('active')) {
@@ -12,6 +15,7 @@
           temp.addClass('active').removeClass('hidechat')
           temp.prevAll('.chat-container').addClass('hidechat').removeClass('active')
           temp.nextAll('.chat-container').removeClass('active').removeClass('hidechat')
+<<<<<<< ca1674afd42a35c7ccfafa0d97b0cd991dc0bb60
         }
       })
       showUI('#cont1')
@@ -100,3 +104,39 @@
             }
         }
 >>>>>>> Add chat table
+=======
+        }
+      })
+      showUI('#cont1')
+    })
+
+    function showUI (ele) {
+      var kids = $(ele).children(), temp
+      for (var i = kids.length - 1; i >= 0; i--) {
+        temp = $(kids[i])
+
+        if (temp.is('div')) {
+          temp.animate({
+            marginTop: 0
+          }, 400).css({opacity: 1}).fadeIn()
+        } else {
+          temp.css({opacity: 1}).fadeIn()
+        }
+      }
+    }
+
+    function hideUI (ele) {
+      var kids = $(ele).children(), temp
+      for (var i = kids.length - 1; i >= 0; i--) {
+        temp = $(kids[i])
+
+        if (temp.is('div')) {
+          temp.animate({
+            marginTop: '30px'
+          }).css({opacity: 0})
+        } else {
+          temp.css({opacity: 0})
+        }
+      }
+    }
+>>>>>>> Done chat-box

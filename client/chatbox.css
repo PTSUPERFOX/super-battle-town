@@ -17,6 +17,7 @@ body {
   margin: 20px;
   max-width: 400px;
   height: 600px;
+<<<<<<< ca1674afd42a35c7ccfafa0d97b0cd991dc0bb60
 <<<<<<< 0d1b34eca1aac614d23376bc786dc468a5d9b63e
   position: relative;
   transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
@@ -25,6 +26,8 @@ body {
   /*box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);*/
   /*border : 1px solid #000;*/
   /*overflow: hidden;*/
+=======
+>>>>>>> Done chat-box
   position: relative;
   transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
 >>>>>>> Add chat table
@@ -55,11 +58,15 @@ body {
 
 .chat-control {
   padding: 1.2em;
+<<<<<<< ca1674afd42a35c7ccfafa0d97b0cd991dc0bb60
 <<<<<<< 0d1b34eca1aac614d23376bc786dc468a5d9b63e
   margin-top: 506px;
 =======
   margin-top: 495px;
 >>>>>>> Add chat table
+=======
+  margin-top: 506px;
+>>>>>>> Done chat-box
 }
 
 .chat-input {
@@ -101,6 +108,7 @@ p {
   background: white;
   padding: 0.5em 1em;
   border-radius: 3px;
+<<<<<<< ca1674afd42a35c7ccfafa0d97b0cd991dc0bb60
 <<<<<<< 0d1b34eca1aac614d23376bc786dc468a5d9b63e
   margin: 10px 0;
 =======
@@ -108,15 +116,22 @@ p {
   margin: 10px 0;
   /*color: rgba(255, 255, 255, 0.7);*/
 >>>>>>> Add chat table
+=======
+  margin: 10px 0;
+>>>>>>> Done chat-box
   word-wrap: break-word;
   font-size: 1em;
 }
 
+<<<<<<< ca1674afd42a35c7ccfafa0d97b0cd991dc0bb60
 <<<<<<< 0d1b34eca1aac614d23376bc786dc468a5d9b63e
 /*.bubble:after {
 =======
 .bubble:after {
 >>>>>>> Add chat table
+=======
+/*.bubble:after {
+>>>>>>> Done chat-box
   border-radius: 20px / 5px;
   content: '';
   display: block;
@@ -126,11 +141,15 @@ p {
   bottom: 1px;
   transform: rotateZ(-90deg);
   left: -15px;
+<<<<<<< ca1674afd42a35c7ccfafa0d97b0cd991dc0bb60
 <<<<<<< 0d1b34eca1aac614d23376bc786dc468a5d9b63e
 }*/
 =======
 }
 >>>>>>> Add chat table
+=======
+}*/
+>>>>>>> Done chat-box
 
 .bubble-alt {
   float: right;
@@ -143,6 +162,7 @@ p {
   right: -16px;
 }
 
+<<<<<<< ca1674afd42a35c7ccfafa0d97b0cd991dc0bb60
 <<<<<<< 0d1b34eca1aac614d23376bc786dc468a5d9b63e
 =======
 .datestamp {
@@ -155,6 +175,8 @@ p {
 }
 
 >>>>>>> Add chat table
+=======
+>>>>>>> Done chat-box
 .dt-alt {
   float: right;
 }
